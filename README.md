@@ -1,4 +1,4 @@
-# BookShelf-App-
+# BookShelf-App
 
 <p align="center">
   <a href="https://consumet.org/">
@@ -7,7 +7,7 @@
 </p>
 
 <h1 align="center">
-  Consumet API
+  BookShelf App
 </h1>
 <p align="center">
   Consumet provides an APIs for accessing information and links for various entertainments like movies, books, anime, etc.
