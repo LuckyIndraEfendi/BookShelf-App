@@ -35,7 +35,7 @@ installation is simple.
 Run the following command to clone the repository, and install the dependencies.
 
 ```sh
-$ https://github.com/LuckyIndraEfendi/BookShelf-App-.git
+$ https://github.com/LuckyIndraEfendi/BookShelf-App.git
 $ cd BookShelf-App
 $ npm install #or yarn install
 ```
