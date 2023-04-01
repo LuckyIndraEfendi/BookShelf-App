@@ -80,11 +80,11 @@ function form(props) {
                   : ""
               }
               gambarBuku={result.imagePath}
-              descripsiBuku={
+            descripsiBuku={
                 result.description
                   ? result.description.length > 250
                     ? `${result.description.substring(0, 100)}...... `
-                    : ""
+                    : `${result.description.substring(0, 100)}......  `
                   : ""
               }
               key={i}
