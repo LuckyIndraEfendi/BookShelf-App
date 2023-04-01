@@ -4,6 +4,7 @@ import { baseURL } from "../utils/constans";
 import { useParams } from "react-router-dom";
 import { Button } from "@mui/material";
 import axios from "axios";
+import swal from "sweetalert";
 const List = ({
   cardId,
   gambarBuku,
@@ -13,14 +14,29 @@ const List = ({
   updateMode,
 }) => {
   const handleRemove = async (cardId) => {
-    if (window.confirm(`Kamu Yakin Mau menghapus ${judulBuku}`)) {
+    const willDelete = await swal({
+      title: `Kamu Yakin Mau Hapus ${judulBuku}`,
+      text: "Setelah dihapus, Anda tidak akan dapat memulihkan buku ini",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    });
+
+    if (willDelete) {
       try {
         const response = await axios.delete(`${baseURL}/${cardId}`);
         console.log("Successfully Delete");
-        window.location.reload();
+        swal(`Buku ${judulBuku} Berhasil di Hapus`, {
+          icon: "success",
+        });
+        setTimeout(() => {
+          window.location.reload();
+        }, 1200);
       } catch (error) {
         console.log("Error: " + error);
       }
+    } else {
+      swal("Data Buku Tidak di Hapus");
     }
   };
 

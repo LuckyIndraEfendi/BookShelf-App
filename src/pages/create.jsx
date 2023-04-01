@@ -6,7 +6,7 @@ import {
   Input,
   Button,
 } from "@mui/material";
-
+import swal from "sweetalert";
 import axios from "axios";
 import { baseURL } from "../utils/constans";
 import { useNavigate } from "react-router-dom";
@@ -23,11 +23,12 @@ function create(props) {
       const response = await axios.post(baseURL, createResult, {
         headers: { "content-type": "application/json" },
       });
-      console.log("Successfully created");
 
+      swal("Good job!", "Data berhasil di Tambahkan", "success");
       navigate("/");
     } catch (error) {
       console.log("Error: " + error);
+      swal("Failed!", "Data Tidak berhasil di Edit", "failed");
     }
   };
 

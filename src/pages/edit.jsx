@@ -8,6 +8,7 @@ import {
   Button,
 } from "@mui/material";
 import axios from "axios";
+import swal from "sweetalert";
 import { baseURL } from "../utils/constans";
 function edit(props) {
   const [judulBuku, setJudulBuku] = useState("");
@@ -38,10 +39,12 @@ function edit(props) {
       const response = await axios.put(`${baseURL}/${id}`, createResult, {
         headers: { "content-type": "application/json" },
       });
-      console.log("Successfully created");
+      swal("Good job!", "Data berhasil di Edit", "success");
+
       navigate("/");
     } catch (error) {
       console.log("Error: " + error);
+      swal("Failed!", "Data Tidak berhasil di Edit", "failed");
     }
   };
   return (
