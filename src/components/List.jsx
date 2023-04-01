@@ -25,7 +25,6 @@ const List = ({
     if (willDelete) {
       try {
         const response = await axios.delete(`${baseURL}/${cardId}`);
-        console.log("Successfully Delete");
         swal(`Buku ${judulBuku} Berhasil di Hapus`, {
           icon: "success",
         });
