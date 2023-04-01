@@ -1,0 +1,16 @@
+.grup {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  margin-top: 10vh;
+}
+.details {
+  padding: 10px 16px;
+  background: #444343;
+  border-radius: 5px;
+}
