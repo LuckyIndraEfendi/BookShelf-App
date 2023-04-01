@@ -47,8 +47,8 @@ function form(props) {
         judulBuku={
           result.judulBuku
             ? result.judulBuku.length > 10
-              ? `${result.judulBuku.substring(0, 25)} `
-              : `${result.judulBuku.substring(0, 25)}.... `
+              ? `${result.judulBuku.substring(0, 25)}.... `
+              : ` ${result.judulBuku.substring(0, 25)}`
             : ""
         }
         gambarBuku={result.imagePath}
@@ -56,8 +56,8 @@ function form(props) {
           result.description
             ? result.description.length > 250
               ? `${result.description.substring(0, 100)}...... `
-              : ""
-            : ""
+              : `${result.description}`
+            : ``
         }
         key={i}
         cardId={result.id}
@@ -72,7 +72,7 @@ function form(props) {
           books.map((result, i) => (
             <List
               pengarangBuku={result.pengarang}
-             judulBuku={
+              judulBuku={
                 result.judulBuku
                   ? result.judulBuku.length > 0
                     ? `${result.judulBuku.substring(0, 25)} `
@@ -80,11 +80,11 @@ function form(props) {
                   : ""
               }
               gambarBuku={result.imagePath}
-            descripsiBuku={
+              descripsiBuku={
                 result.description
                   ? result.description.length > 250
-                    ? `${result.description.substring(0, 100)}...... `
-                    : `${result.description.substring(0, 100)}......  `
+                    ? `${result.description.substring(0, 100)}......`
+                    : `${result.description.substring(0, 100)} `
                   : ""
               }
               key={i}
