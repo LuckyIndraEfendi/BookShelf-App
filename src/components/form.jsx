@@ -72,9 +72,9 @@ function form(props) {
           books.map((result, i) => (
             <List
               pengarangBuku={result.pengarang}
-              judulBuku={
+             judulBuku={
                 result.judulBuku
-                  ? result.judulBuku.length > 10
+                  ? result.judulBuku.length > 0
                     ? `${result.judulBuku.substring(0, 25)} `
                     : `${result.judulBuku.substring(0, 25)}.... `
                   : ""
