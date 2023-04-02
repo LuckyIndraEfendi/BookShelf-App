@@ -105,7 +105,7 @@ Output >>
 | `q` (string)    | anime title         |
 
 ```js
-fetch("https://gogoanime.consumet.stream/search?keyw=naruto")
+fetch("http://localhost:5000?q=rimuru")
   .then((response) => response.json())
   .then((animelist) => console.log(animelist));
 ```
