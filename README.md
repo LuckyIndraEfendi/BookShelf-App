@@ -57,7 +57,7 @@ npm install --legacy-peer-deps #or yarn install
 ### Run React + Vite on the development mode
 
 ```sh
-npm start #or yarn start
+npm run dev 
 ```
 Now the React + Vite is running on http://localhost:3000
 
