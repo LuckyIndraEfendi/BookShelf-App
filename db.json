@@ -1,0 +1,22 @@
+{
+  "books": [
+    {
+      "judulBuku": "Naruto Uzumaki",
+      "description": "Moments prior to Naruto Uzumaki's birth, a huge demon known as the Kyuubi, the Nine-Tailed Fox, attacked Konohagakure, the Hidden Leaf Village, and wreaked havoc. In order to put an end to the Kyuubi's rampage, the leader of the village, the Fourth Hokage, sacrificed his life and sealed the monstrous beast inside the newborn Naruto.      ",
+      "pengarang": "Misashi Kishimoto",
+      "id": 1
+    },
+    {
+      "judulBuku": "Rimuru Tempest - Tensei Shitara Slime datta ken",
+      "description": "The main protagonist of the series and Founder as well as Chancellor and King of the monster nation known as the Jura-Tempest Federation. Originally Mikami Satoru, a 37-year-old general contractor, he was stabbed by a passing robber while protecting one of his co-workers and reincarnated in a new world as a slime, one of the lowest monsters on the food chain",
+      "pengarang": "Tensura Nikkiii",
+      "id": 2
+    },
+    {
+      "judulBuku": "Spy x Family",
+      "description": "For the agent known as \\\"Twilight,\\\" no order is too tall if it is for the sake of peace. Operating as Westalis' master spy, Twilight works tirelessly to prevent extremists from sparking a war with neighboring country Ostania. For his latest mission, he must investigate Ostanian politician Donovan Desmond by infiltrating his son's school: the prestigious Eden Academy. Thus, the agent faces the most difficult task of his career: get married, have a child, and play family.\\n\\nTwilight, or \\\"Loid Forger,\\\" quickly adopts the unassuming orphan Anya to play the role of a six-year-old daughter and prospective Eden Academy student. For a wife, he comes across Yor Briar, an absent-minded office worker who needs a pretend partner of her own to impress her friends. However, Loid is not the only one with a hidden nature. Yor moonlights as the lethal assassin \\\"Thorn Princess.\\\" For her, marrying Loid creates the perfect cover.",
+      "pengarang": "Lucky Anime",
+      "id": 3
+    }
+  ]
+}
